@@ -1,0 +1,43 @@
+{
+  "name": "react-codesandbox",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@reach/tabs": "0.8.5",
+    "babel-loader": "8.0.6",
+    "dequal": "1.0.0",
+    "history": "4.10.1",
+    "mdx-loader": "3.0.2",
+    "normalize.css": "8.0.1",
+    "prism-theme-night-owl": "1.2.0",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
+    "react-router-dom": "5.1.2",
+    "react-scripts": "^3.1.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "format": "prettier --write \"**/*.+(js|json|css|md|mdx|html)\""
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged && npm run build"
+    }
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "devDependencies": {
+    "prettier": "^1.15.2",
+    "husky": "^1.1.4",
+    "lint-staged": "^8.0.4"
+  }
+}

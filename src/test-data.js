@@ -1,6 +1,6 @@
 import React from 'react'
 
-const projectTitle = 'Example Project 💯'
+const projectTitle = 'Example Project'
 const filesInfo = [
   {
     id: 'src/exercise/01.js',

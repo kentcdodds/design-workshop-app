@@ -1,8 +1,9 @@
 /** @jsx jsx */
 import {jsx} from '@emotion/core'
-import {colors} from '../theme'
+import {useTheme} from 'emotion-theming'
 
 export default function Logo(props) {
+  const theme = useTheme()
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -12,8 +13,8 @@ export default function Logo(props) {
       {...props}
     >
       <g
-        fill={props.color || colors.primary}
-        stroke={props.color || colors.primary}
+        fill={props.color || theme.primary}
+        stroke={props.color || theme.primary}
         strokeWidth={props.strokeWidth || 0}
         transform="translate(2.5 .5)"
       >

@@ -1,5 +1,4 @@
 {
-  "presets": [
-    "babel-preset-react-app"
-  ]
+  "presets": ["babel-preset-react-app"],
+  "plugins": ["emotion"]
 }
